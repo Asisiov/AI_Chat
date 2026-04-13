@@ -1,5 +1,5 @@
 {
-  "originHash" : "fd0ab54e088604213a3d65f2f34c99ebb6bc63b705ce84fd107e4f0da5030e2c",
+  "originHash" : "59c4ba87a8968de2c5dca23681413c953b804c68a32ea98bd31cbf995dbf88c5",
   "pins" : [
     {
       "identity" : "mlx-swift",
@@ -123,7 +123,16 @@
       "location" : "git@github.com:Asisiov/swift-tokenizers.git",
       "state" : {
         "branch" : "main",
-        "revision" : "99048eb3da88dd5bc8a2fdefb30af02c6302c77c"
+        "revision" : "8a2b05321f1574b275006e6f9beb10c493912de6"
+      }
+    },
+    {
+      "identity" : "swift-tokenizers-mlx",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:Asisiov/swift-tokenizers-mlx.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6b1837205530bf534417156b9c24fd9c2ac6d969"
       }
     },
     {
