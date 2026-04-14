@@ -13,4 +13,8 @@ public enum LLMError: Error {
     case invalidModelPath(URL)
     case loadFailed(underlying: Error)
     case invalidRemoteModelID(String)
+    case modelNotLoaded
+    case emptyPrompt
+    case emptyResponse
+    case generationFailed(underlying: Error)
 }
