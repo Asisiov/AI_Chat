@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11098E2C2F8D1B6F0058821A /* LamaChatModule in Frameworks */ = {isa = PBXBuildFile; productRef = 11098E2B2F8D1B6F0058821A /* LamaChatModule */; };
+		11F63CDF2F8E4DB5008B52D2 /* LLMLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 11F63CDE2F8E4DB5008B52D2 /* LLMLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		11098D372F8D19E10058821A /* AI-Chat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AI-Chat"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11098D412F8D1A170058821A /* LamaChatModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LamaChatModule; path = ../LamaChatModule; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11098E2C2F8D1B6F0058821A /* LamaChatModule in Frameworks */,
+				11F63CDF2F8E4DB5008B52D2 /* LLMLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +49,6 @@
 		11098D2E2F8D19E10058821A = {
 			isa = PBXGroup;
 			children = (
-				11098D412F8D1A170058821A /* LamaChatModule */,
 				11098D392F8D19E10058821A /* AI-Chat */,
 				11098D382F8D19E10058821A /* Products */,
 			);
@@ -84,7 +82,7 @@
 			);
 			name = "AI-Chat";
 			packageProductDependencies = (
-				11098E2B2F8D1B6F0058821A /* LamaChatModule */,
+				11F63CDE2F8E4DB5008B52D2 /* LLMLibrary */,
 			);
 			productName = "AI-Chat";
 			productReference = 11098D372F8D19E10058821A /* AI-Chat */;
@@ -115,7 +113,7 @@
 			mainGroup = 11098D2E2F8D19E10058821A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				11098E2A2F8D1B6F0058821A /* XCLocalSwiftPackageReference "../LamaChatModule" */,
+				11F63CDD2F8E4DB5008B52D2 /* XCLocalSwiftPackageReference "Packages/LLMLibrary" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 11098D382F8D19E10058821A /* Products */;
@@ -308,16 +306,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		11098E2A2F8D1B6F0058821A /* XCLocalSwiftPackageReference "../LamaChatModule" */ = {
+		11F63CDD2F8E4DB5008B52D2 /* XCLocalSwiftPackageReference "Packages/LLMLibrary" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../LamaChatModule;
+			relativePath = Packages/LLMLibrary;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		11098E2B2F8D1B6F0058821A /* LamaChatModule */ = {
+		11F63CDE2F8E4DB5008B52D2 /* LLMLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = LamaChatModule;
+			productName = LLMLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

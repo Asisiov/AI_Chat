@@ -1,11 +1,20 @@
 // swift-tools-version: 6.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
+// swift-tools-version: 6.3
 import PackageDescription
 
 let package = Package(
-    name: "LamaChatModule",
-    platforms: [.macOS(.v26)],
+    name: "LLMLibrary",
+    platforms: [
+        .macOS(.v15)
+    ],
+    products: [
+        .library(
+            name: "LLMLibrary",
+            targets: ["LLMLibrary"]
+        ),
+    ],
     dependencies: [
         .package(
             url: "https://github.com/apple/swift-argument-parser.git",
@@ -23,19 +32,33 @@ let package = Package(
             url: "git@github.com:Asisiov/swift-hf-api-mlx.git",
             branch: "main"
         ),
+//        .package(
+//            url: "https://github.com/ml-explore/mlx-swift-lm.git",
+//            branch: "main"
+//        ),
+//        .package(
+//            url: "https://github.com/DePasqualeOrg/swift-tokenizers-mlx.git",
+//            from: "0.1.3"
+//        ),
+//        .package(
+//            url: "https://github.com/DePasqualeOrg/swift-hf-api-mlx.git",
+//            from: "0.1.1"
+//        )
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .executableTarget(
-            name: "LamaChatModule",
+        .target(
+            name: "LLMLibrary",
             dependencies: [
-                .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "MLXLLM", package: "mlx-swift-lm"),
                 .product(name: "MLXLMTokenizers", package: "swift-tokenizers-mlx"),
                 .product(name: "MLXLMHFAPI", package: "swift-hf-api-mlx"),
-            ]
-        ),
+            ],
+            path: "Sources/LLMLibrary"
+        )
+//        .testTarget(
+//            name: "LLMLibraryTests",
+//            dependencies: ["LLMLibrary"]
+//        )
     ],
     swiftLanguageModes: [.v6]
 )
